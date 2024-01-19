@@ -3,214 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Hector Gonzalez</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Hector Gonzalez's Resume</h1>
-    <img src="assets/images/Colorado Headshot.jpg" height="200" weight="200"/>
-    <p>Professional Software Engineer at Applied Research Laboratories</p>
+<!-- Navbar -->
+<header class="navbar-header">
+  <a href="#" class="logo">HG</a>
 
-    <hr />
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Skills</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-    <h2>Education</h2>
-
-    <ul>
-        <li>
-            <h3>The University of Texas at Austin (08/2019 - 05/2023)</h3>
-            <ul>
-                <li>BS in Electrical and Computer Engineering (<i>Software Engineering Track</i>)</li>
-                <li>3.90 GPA</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>Work Experience</h2>
-
-
-    <ul>
-        <li>
-            <h3>Software Developer Associate (06/2023 - Present)</h3>
-            <h4>Applied Research Laboratories</h4>
-            <ul>
-
-                <li>
-                    Converting the Acoutic Recording and Processing System codebase from C to Python by
-                    drafting an entirely new architecture based on object-oriented programming and pythonic elements.
-                </li>
-
-                <li>
-                    Developing new task development aids (GUIs) for sonar operators in submarines  
-                    to plan routes based on confirmed adversaries and self noise projection. [OSAM]
-                </li>
-
-                <li>
-                    Improved runtime of backend Python service that creates geographical overlays 
-                    by nearly 300%.
-                </li>
-
-                <li>
-                    Enhanced ability to decimate and cache the retrieval of noise data from a Python 
-                    data service.
-                </li>
-
-                <li>
-                    Created new CI/CD pipelines for a Python codebase.
-                </li>
-
-            </ul>
-        </li>
-
-        <li>
-            <h3>Student Technician (09/2022 - 01/2023)</h3>
-            <h4>Applied Research Laboratories</h4>
-            <ul>
-
-                <li>
-                    Gained exposure working with CASS, which is the comprehensive acoustics simulation system 
-                    that is utilized for computing underwater acoustic calculations.
-                </li>
-
-                <li>
-                    Researched computational and fundamental differences between MATLAB and C++ API when interfacing with CASS.
-                </li>
-
-                <li>
-                    Developed a graphical interface using MATLAB that computes basic reverberation calculations by 
-                    interfacing with CASS C/C++ API.
-                </li>
-
-            </ul>
-        </li>
-
-        <li>
-            <h3>SWE Intern (06/2022 - 09/2023)</h3>
-            <h4>GAP Inc.</h4>
-            <ul>
-
-                <li>
-                    Created TLS certification script that determines when TLS certifications are going to 
-                    expire and notifies respective team with email. (Aids in maintenance of Mongo/Redis Databases.)
-                </li>
-
-                <li>
-                    Created automated scripts that would run a hot backup or percona backup (as specified) on a 
-                    percona mongodb database.
-                </li>
-
-                <li>
-                    Created an automated script that would auto generate a csr key for a 
-                    virtual machine given an input file with specified parameters.
-                </li>
-
-                <li>
-                    Conducted maintenance on linux virtual machines by validating mongo unix user passwords and log files.
-                </li>
-
-                <li>
-                    Gained first hand experience in agile methodologies with weekly/daily stand up meetings. (Atlassian technologies)
-                </li>
-
-            </ul>
-        </li>
-
-        <li>
-            <h3>Student Technician (09/2021 - 06/2022)</h3>
-            <h4>Applied Research Laboratories</h4>
-            <ul>
-
-                <li>
-                    Co-op employment utilizing computer vision and reinforcement learning to 
-                    further research and development in passive and active sonar.
-                </li>
-
-                <li>
-                    Utilizing reinforcement learning algorithms to solve mathematical equations (polynomials).
-                </li>
-
-                <li>
-                    Gained exposure to Q-Learning, DQN, Stable Baselines3, and OpenAI GYM.
-                </li>
-
-                <li>
-                    Delivered a presentation to laboratory to discuss the benefits and drawbacks of 
-                    utilizing reinforcement learning to solve complex problems.
-                </li>
-
-            </ul>
-        </li>
-
-        <li>
-            <h3>Summer Honors Scholar Intern (06/2021 - 09/2021)</h3>
-            <h4>Applied Research Laboratories</h4>
-            <ul>
-
-                <li>
-                    Developed skills in heading a research project and in mentoring others, specifically high school apprentices.
-                </li>
-
-                <li>
-                    Nurtured skills in applied research and development by creating aquamarine mammal classifiers.
-
-                </li>
-
-                <li>
-                    Learned the basics of digital signal processing and how to create spectrograms given wav files (audio). 
-                </li>
-
-                <li>
-                    Researched effective methods to attack/defend against adversarial inputs into deep convolutional neural networks.
-                </li>
-
-            </ul>
-        </li>
-    </ul>
+<!-- Hero -->
+<main>
+  <section class="hero">
+      <h1>Hey, I am Hector Gonzalez.</h1>
+      <h2>A software engineer that strives to close the gap between simple solutions and complex problems.</h2>
+  </section>
 
 
-    <h2>Projects</h2>
+<!-- About -->
+  <section class="about">
 
-        <ul>
-            <li>John Deere Crabbing Detection Algorithm (Senior Design)</li>
-            <li>MMA Fight Prediction Model (Data Science)</li>
-            <li>Yet Another Shell Terminal and Pintos OS [userprog, virtual memory, filesys] (Operating Systems)</li>
-            <li>Hardware-as-a-Service Full Stack Webiste (Software Lab)</li>
-            <li>Clock/Timer utilizing Basys3 FPGA Board and Verilog (Digital Logic Design)</li>
-            <li>Mock Ebay auctioning Java application (Software II)</li>
-            <li>Critters gameboard Java application (Software II)</li>
-            <li>Blip Language Interpreter [C/C++] (Software I)</li>
-            <li>Space Invaders embedded systems game (Embedded Systems Lab)</li>
-            <li>Connect 4 [LC3 Assembly] (Intro to Computing)</li>
-            <li>Line-following robotic car [Arduino] (Intro to Electrical Engineering)</li>
-        </ul>
-
-
-
-    <h2>Skills</h2>
-
-        <ul>
-            <li>Python, Java, C/C++, and JavaScript</li>
-            <li>User interface application development with Java Swing and JavaFx</li>
-            <li>Machine Learning (Supervised, Unsupervised, and Reinforcement)</li>
-            <li>NoSql Databases (MongoDB) and SQL Databases (mariaDB) </li>
-            <li>Full Stack Web Development (HTML, MaterialUI CSS, React JS, Heroku)</li>
-        </ul>
+    <h2>Who Am I?</h2>
+    <hr>
     
-    <h2>Awards</h2>
+    <div class="about-content">  
+      <img class="about-img" src="/assets/imgs/grad_walk.jpg">
+      <p>
+        I’m Hector Gonzalez, a passionate software engineer with a love for tackling complex 
+        and demanding problems. My career began at the University of Texas at Austin, 
+        where I earned a BS in Electrical and Computer Engineering with a focus on software engineering.
+        
+        <br> <br>
 
-        <ul>
-            <li>Graduated with Honors (05/2023)</li>
-            <li>Honors Scholar Distinction (05/2022)</li>
-            <li>2nd place research project winner in Applied Research Laboratories (06/2021)</li>
-        </ul>
+        My professional journey has taken me through the realms of machine learning, 
+        database automation, and developing robust software applications. While I’m 
+        proficient in these domains, I’m currently expanding my horizons in the world of 
+        web development, eager to embrace new challenges in artistic expression through 
+        logical code.
+        
+        <br> <br>
 
-    <hr />
+        Beyond coding, I find solace in the art of combat sports. When I’m not immersed in lines of code, 
+        you’ll likely find me training in boxing, muay thai, jiu-jitsu, or wrestling. Thanks for stopping 
+        by my corner of the web! Feel free to reach out – I’d love to connect.
+      </p>
+    </div>   
 
-    <h3><a href="public/hobbies.html">My Hobbies</a></h3>
-    <h3><a href="public/contact.html">Contact Me</a></h3>
+  </section>
 
-    <footer>
-        <p>&copy; 2023 Hector Gonzalez. All rights reserved.</p>
-    </footer>
+
+<!-- Skills -->
+  <section class="skills">
+
+    <h2>I have...</h2>
+    <hr>
+
+
+    <div class="skills-content">
+
+      <div class="skills-row">
+        <div class="skill-column">
+          <img src="/assets/vectors/languages-svg.svg" height="100px" width="100px">
+          <h3>Proficiency in these <br> languages</h3>
+          <hr width="100%">
+          <ul>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-column">
+          <img src="/assets/vectors/knowledge-svg.svg" height="100px" width="100px">
+          <h3>Knowledge in these <br> domains</h3>
+          <hr width="100%">
+          <ul>
+            <li>Software Development</li>
+            <li>Machine Learning</li>
+            <li>Databases</li>
+            <li>Web Development</li>
+          </ul>
+        </div>
+
+        <div class="skill-column">
+          <img src="/assets/vectors/work-svg.svg" height="100px" width="100px">
+          <h3>Experience in these <br> industries</h3>
+          <hr width="100%">
+          <ul>
+            <li>Defense</li>
+            <li>Retail</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- <div class="skills-showing"></div> -->
+
+    </div>
+
+    <button type="button">My Resume</button>
+
+  </section>
+
+
+
+<!-- Project -->
+  <section class="projects">
+    <h2>Projects</h2>
+    <hr>
+
+    <div class="project-tile">
+
+      <img src="assets/imgs/ufc_project.jpg">
+
+      <div class="project-description">
+        <h3>MMA Fight Predictor</h3>
+        <p>
+          Worked on a team and utilized a variety of methods to determine whether one can predict 
+          the outcome of a fight based on the statistics of both fighters (win rate, height, weight, etc.). 
+        </p>
+        <p>
+          Skills Used: Python, Data Preprocessing, Feature Engineering, Logistic Classification, Boosting, Bagging, 
+          Stacking, Neural Networks, Ensembling, Hyperparameter Tuning, and Model Evaluation
+        </p>
+      </div>
+
+    </div>
+
+    <div class="project-tile">
+
+      <img src="assets/imgs/yash_project.jpg">
+
+      <div class="project-description">
+        <h3>Yet Another Shell (yash)</h3>
+        <p>
+          A command line interpreter known as a shell that takes commands from standard input and 
+          executes the commands by creating processes. Essentially implemented a subset of features 
+          from standard shells like bash/tcsh/csh/etc.. 
+          Features included are: executing commands, file redirection, piping, signals, and job control.
+        </p>
+        <p>
+          Skills Used: C, string parsing, os calls [exec, fork, etc.], Bash, and Linux
+        </p>
+      </div>
+    </div>
+
+    <div class="project-tile">
+
+      <img src="assets/imgs/HaaS_Project.png">
+
+      <div class="project-description">
+        <h3>HaaS Full-Stack Website</h3>
+        <p>
+          Worked on a team developing a full-stack application that allows for users to log-in, create projects, 
+          access existing projects, save user/project information (database), access information through an API, 
+          and employ security features like encryption of user id and password.s.
+        </p>
+        <p>
+          Skills Used: HTML5, CSS3 (MaterialUI Framework), Python (Flask Framework), 
+          NoSQL (mongoDB), and Heroku (website deployment).
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+<!-- Contact -->
+  <section class="contact">
+    <h2>Want to get in touch?</h2>
+    <form class="contact-form">
+      <input type="subject">
+      <input type="message">
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Hector Gonzalez. All rights reserved.</p>
+</footer>
+
 
 </body>
 </html>
