@@ -3,199 +3,253 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hector Gonzalez</title>
-    <link href="styles.css" rel="stylesheet">
+    <title>Hector's Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/da389fd63e.js" crossorigin="anonymous"></script>    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-<!-- Navbar -->
-<header class="navbar-header">
-  <a href="#" class="logo">HG</a>
+    <!-- Navigation Bar -->
+    <header>
+        <a class="logo" href="#">HG</a>
 
-  <nav class="navbar">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class='bx bx-x' id="close-icon"></i>
+        </label>
 
-<!-- Hero -->
-<main>
-  <section class="hero">
-      <h1>Hey, I am Hector Gonzalez.</h1>
-      <h2>A software engineer that strives to close the gap between simple solutions and complex problems.</h2>
-  </section>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="#about-link">ABOUT</a></li>
+                <li><a href="#skills-link">SKILLS</a></li>
+                <li><a href="#projects-link">PROJECTS</a></li>
+                <li><a href="#contact-link">CONTACT</a></li>
+            </ul>
+        </nav>     
 
+    </header>
 
-<!-- About -->
-  <section class="about">
-
-    <h2>Who Am I?</h2>
-    <hr>
-    
-    <div class="about-content">  
-      <img class="about-img" src="/assets/imgs/grad_walk.jpg">
-      <p>
-        I’m Hector Gonzalez, a passionate software engineer with a love for tackling complex 
-        and demanding problems. My career began at the University of Texas at Austin, 
-        where I earned a BS in Electrical and Computer Engineering with a focus on software engineering.
-        
-        <br> <br>
-
-        My professional journey has taken me through the realms of machine learning, 
-        database automation, and developing robust software applications. While I’m 
-        proficient in these domains, I’m currently expanding my horizons in the world of 
-        web development, eager to embrace new challenges in artistic expression through 
-        logical code.
-        
-        <br> <br>
-
-        Beyond coding, I find solace in the art of combat sports. When I’m not immersed in lines of code, 
-        you’ll likely find me training in boxing, muay thai, jiu-jitsu, or wrestling. Thanks for stopping 
-        by my corner of the web! Feel free to reach out – I’d love to connect.
-      </p>
-    </div>   
-
-  </section>
-
-
-<!-- Skills -->
-  <section class="skills">
-
-    <h2>I have...</h2>
-    <hr>
-
-
-    <div class="skills-content">
-
-      <div class="skills-row">
-        <div class="skill-column">
-          <img src="/assets/vectors/languages-svg.svg" height="100px" width="100px">
-          <h3>Proficiency in these <br> languages</h3>
-          <hr width="100%">
-          <ul>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>JavaScript</li>
-          </ul>
+    <!-- Hero Section -->
+    <div class="hero">  
+        <div class="hero-section-container">
+            <div class="hero-content">
+                <h1>Hey, I'm <span id="hero-name">Hector Gonzalez</span></h1>
+                <p>A <span id="hero-subtitle">software engineer</span> converting complex problems into simple solutions.</p>
+            </div>
         </div>
 
-        <div class="skill-column">
-          <img src="/assets/vectors/knowledge-svg.svg" height="100px" width="100px">
-          <h3>Knowledge in these <br> domains</h3>
-          <hr width="100%">
-          <ul>
-            <li>Software Development</li>
-            <li>Machine Learning</li>
-            <li>Databases</li>
-            <li>Web Development</li>
-          </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- <div class="spacer hero-about-layer"></div> -->
+
+
+        <!-- About Section -->
+        <div id="about-link" class="about">
+            <div class="content-container">
+                <div class="about-content">
+                    <div class="about-content-profile">
+                        <img class="about-content-headshot" src="/assets/img/Headshot.jpg">
+                        <p>Hector Gonzalez</p>
+
+                        <div class="about-content-profile-icons">
+                            <a href="/assets/img/resume.pdf" target="_blank"><i class="fa-solid fa-file fa-lg font-awesome-icon"></i></a>
+                            <a href="https://www.linkedin.com/in/hectorgonzalez2023" target="_blank"><i class="fa-brands fa-linkedin fa-lg font-awesome-icon"></i></a>
+                            <a href="https://github.com/hecgon2022" target="_blank"><i class="fa-brands fa-github fa-lg font-awesome-icon"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="about-content-description">
+                        <h2 class="section-heading">About Me</h2>
+                        <p>
+                            Born in the small town of Seguin, Tx, I’m Hector Gonzalez, a passionate software engineer with a love for tackling complex and demanding problems. My career began at the University of Texas at Austin, where I earned a BS in Electrical and Computer Engineering with a focus on software engineering.
+
+                            <br><br>My professional journey has taken me through the realms of machine learning, database automation, and developing robust software applications. While I’m proficient in these domains, I’m currently expanding my horizons in the world of web development, eager to embrace new challenges in artistic expression through logical code.
+                            <br><br>Beyond coding, I find solace in the art of combat sports. When I’m not immersed in lines of code, you’ll likely find me training in boxing, muay thai, jiu-jitsu, or wrestling. Thanks for stopping by my corner of the web! Feel free to reach out – I’d love to connect.
+                            
+
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="skill-column">
-          <img src="/assets/vectors/work-svg.svg" height="100px" width="100px">
-          <h3>Experience in these <br> industries</h3>
-          <hr width="100%">
-          <ul>
-            <li>Defense</li>
-            <li>Retail</li>
-          </ul>
+
+        <div id="skills-link" class="spacer about-skills-layer"></div>
+
+
+        <!-- Skills Section -->
+        <div class="skills">
+
+            <div class="content-container">
+                <h2 class="section-heading">My Skills</h2>
+                <div class="skills-content">
+                    <div class="skills-content-col">
+                        <img class="skills-head-icon" src="/assets/svgs/software-dev.svg">
+                        <h3>Software Development</h3>
+                        <hr>
+                        <div class="skills-icon-grid">
+                            <div class="skills-icon-row">
+                                <img src="/assets/svgs/prog-icons/python-icon.svg">
+                                <img src="/assets/svgs/prog-icons/java-icon.svg">
+                                <img src="/assets/svgs/prog-icons/c-icon.svg">
+                            </div>
+                            <div class="skills-icon-row">
+                                <img src="/assets/svgs/prog-icons/c++-icon.svg">
+                                <img src="/assets/svgs/prog-icons/git-icon.svg">
+                                <img src="/assets/svgs/prog-icons/mysql-icon.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-content-col middle-col">
+                        <img class="skills-head-icon" src="/assets/svgs/web-dev.svg">
+                        <h3>Web Development</h3>
+                        <hr>
+                        <div class="skills-icon-grid">
+                            <div class="skills-icon-row">
+                                <img src="/assets/svgs/web-icons/html-icon.svg">
+                                <img src="/assets/svgs/web-icons/css-icon.svg">
+                                <img src="/assets/svgs/web-icons/javascript-icon.svg">
+                            </div>
+                            <div class="skills-icon-row">
+                                <img src="/assets/svgs/web-icons/bootstrap-icon.svg">
+                                <img src="/assets/svgs/web-icons/react-icon.svg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-content-col">
+                        <img class="skills-head-icon" src="/assets/svgs/ml-dev.svg">
+                        <h3>Machine Learning</h3>
+                        <hr>
+                        <div class="skills-icon-grid">
+                            <div class="skills-icon-row">
+                                <img src="/assets/svgs/ml-icons/pandas-icon.svg">
+                                <img src="/assets/svgs/ml-icons/jupyter-icon.svg">
+                                <img src="/assets/svgs/ml-icons/scikit-icon.svg">
+                            </div>
+                            <div class="skills-icon-row">
+                                <img src="/assets/svgs/ml-icons/tensorflow-icon.svg">
+                                <img src="/assets/svgs/ml-icons/pytorch-icon.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- <div class="skills-showing"></div> -->
-
-    </div>
-
-    <button type="button">My Resume</button>
-
-  </section>
 
 
-
-<!-- Project -->
-  <section class="projects">
-    <h2>Projects</h2>
-    <hr>
-
-    <div class="project-tile">
-
-      <img src="assets/imgs/ufc_project.jpg">
-
-      <div class="project-description">
-        <h3>MMA Fight Predictor</h3>
-        <p>
-          Worked on a team and utilized a variety of methods to determine whether one can predict 
-          the outcome of a fight based on the statistics of both fighters (win rate, height, weight, etc.). 
-        </p>
-        <p>
-          Skills Used: Python, Data Preprocessing, Feature Engineering, Logistic Classification, Boosting, Bagging, 
-          Stacking, Neural Networks, Ensembling, Hyperparameter Tuning, and Model Evaluation
-        </p>
-      </div>
-
-    </div>
-
-    <div class="project-tile">
-
-      <img src="assets/imgs/yash_project.jpg">
-
-      <div class="project-description">
-        <h3>Yet Another Shell (yash)</h3>
-        <p>
-          A command line interpreter known as a shell that takes commands from standard input and 
-          executes the commands by creating processes. Essentially implemented a subset of features 
-          from standard shells like bash/tcsh/csh/etc.. 
-          Features included are: executing commands, file redirection, piping, signals, and job control.
-        </p>
-        <p>
-          Skills Used: C, string parsing, os calls [exec, fork, etc.], Bash, and Linux
-        </p>
-      </div>
-    </div>
-
-    <div class="project-tile">
-
-      <img src="assets/imgs/HaaS_Project.png">
-
-      <div class="project-description">
-        <h3>HaaS Full-Stack Website</h3>
-        <p>
-          Worked on a team developing a full-stack application that allows for users to log-in, create projects, 
-          access existing projects, save user/project information (database), access information through an API, 
-          and employ security features like encryption of user id and password.s.
-        </p>
-        <p>
-          Skills Used: HTML5, CSS3 (MaterialUI Framework), Python (Flask Framework), 
-          NoSQL (mongoDB), and Heroku (website deployment).
-        </p>
-      </div>
-
-    </div>
-
-  </section>
+        <div class="spacer skills-project-layer"></div>
 
 
-<!-- Contact -->
-  <section class="contact">
-    <h2>Want to get in touch?</h2>
-    <form class="contact-form">
-      <input type="subject">
-      <input type="message">
-      <button type="submit">Send</button>
-    </form>
-  </section>
-  
-</main>
+        <!-- Projects Section -->
+        <div id="projects-link" class="projects">
 
-<!-- Footer -->
-<footer>
-  <p>&copy; 2024 Hector Gonzalez. All rights reserved.</p>
-</footer>
+            <div class="content-container">
+                <h2 class="section-heading">My Projects</h2>
+                <div class="projects-content">
+                    <div class="project-tile">
+                        <img class="project-tile-img" src="/assets/img/mma-proj.jpg" height="200px">
+                        <div class="project-tile-text">
+                            <h3>MMA Fight Predictor</h3>
+                            <p>
+                                Worked on a team and utilized a variety of methods to determine whether one can 
+                                predict the outcome of a fight based on the statistics of both fighters (win rate, 
+                                height, weight, etc.).
+                            </p>
+                            <ul class="project-tile-list">
+                                <li>Python</li>
+                                <li>Pandas</li>
+                                <li>Feature Engineering</li>
+                                <li>Classification Modeling</li>
+                                <li>Model Tuning</li>
+                                <li>Deep Learning</li>
+                            </ul>
+                            <a href="https://github.com/hecgon2022/DS_Final_Lab" target="_blank"><i class="fa-brands fa-github fa-2xl font-awesome-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-tile">
+                        <img class="project-tile-img" src="/assets/img/linux-proj.jpg" height="180px">
+                        <div class="project-tile-text">
+                            <h3>Yet Another Shell (yash)</h3>
+                            <p>
+                                A command line interpreter known as a shell that takes commands from standard input and 
+                                executes the commands by creating processes. Essentially implemented a subset of features 
+                                from standard shells like bash/tcsh/csh/etc.. 
+                                Features included are: executing commands, file redirection, piping, signals, and job control.
+                            </p>
+                            <ul class="project-tile-list">
+                                <li>C</li>
+                                <li>Tokenization</li>
+                                <li>Bash</li>
+                                <li>Linux</li>
+                            </ul>
+                            <a href="https://github.com/hecgon2022/EE461L-Absolute-Banger-Project" target="_blank"><i class="fa-brands fa-github fa-2xl font-awesome-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="project-tile">
+                        <img class="project-tile-img" src="/assets/img/HaaS_Project.png" height="158px">
+                        <div class="project-tile-text">
+                            <h3>HaaS Full-Stack Website</h3>
+                            <p>
+                                A full-stack application that allows for users to 
+                                log-in, create projects, access existing projects, save user/project information 
+                                (database), access information through an API, and employ security features like 
+                                encryption of user information.
+                            </p>
+                            <ul class="project-tile-list">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Python</li>
+                                <li>MaterialUI</li>
+                                <li>Flask</li>
+                                <li>MongoDB</li>
+                                <li>Heroku</li>
+                            </ul>
+                            <a href="https://github.com/hecgon2022/Yet-Another-Shell" target="_blank"><i class="fa-brands fa-github fa-2xl font-awesome-icon"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="spacer projects-contact-layer"></div>
 
 
+
+        <!-- Contact Me Section -->
+        <div id="contact-link" class="contact">
+            <div class="content-container">
+                <div class="contact-content">
+
+                    <div class="contact-text">
+                        <h2 class="section-heading">Want to get in touch?</h2>
+                        <p>I'm just a click away...</p>
+                    </div>
+                    <button class="contact-button">Let's connect! <img src="/assets/svgs/handshake-icon.svg"></button>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2024 Hector Gonzalez</p>
+        </footer>
+
+
+
+
+    </div>      
 </body>
 </html>
