@@ -1,0 +1,67 @@
+/* Import our fonts [Roboto -- headings & Merriweather -- body] */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-image: url("/assets/svgs/contact/contact-background.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+.return-link-container {
+    width: 1000px;
+    padding: 20px;
+}
+
+.return-link {
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+.return-link i {
+    margin-right: 12px;
+}
+
+.return-link p  {
+    display: inline;
+}
+
+.return-link:hover {
+    color: #90E0EF;
+}
+
+.contact-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.contact-profile {
+    display: flex;
+    flex-direction: column;
+    height: 380px;
+    padding: 10px 60px 10px 30px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-profile p {
+    font-weight: 700;
+}
+
+.contact-profile-headshot {
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
