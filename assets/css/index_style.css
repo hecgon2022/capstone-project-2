@@ -149,7 +149,7 @@ header::before {
     justify-content: center;
 
     /* aspect-ratio: 900/600;
-    background-image: url("/assets/stacked-waves-haikei.svg");
+    background-image: url("assets/stacked-waves-haikei.svg");
     background-position: center;
     background-size: cover; */
 
@@ -198,7 +198,7 @@ header::before {
 
 
 .hero-about-layer {
-    background-image: url("/assets/svgs/hero-about-wave.svg");
+    background-image: url("assets/svgs/hero-about-wave.svg");
 }
 
 
@@ -254,7 +254,7 @@ header::before {
 
 
 .about-skills-layer {
-    background-image: url("/assets/svgs/waves/about-skills-wave.svg");
+    background-image: url("assets/svgs/waves/about-skills-wave.svg");
 }
 
 
@@ -324,7 +324,7 @@ header::before {
 
 
 .skills-project-layer {
-    background-image: url("/assets/svgs/waves/skills-project-wave.svg");
+    background-image: url("assets/svgs/waves/skills-project-wave.svg");
 }
 
 
@@ -386,7 +386,7 @@ header::before {
 
 
 .projects-contact-layer {
-    background-image: url("/assets/svgs/waves/projects-contact-wave.svg");
+    background-image: url("assets/svgs/waves/projects-contact-wave.svg");
 }
 
 
