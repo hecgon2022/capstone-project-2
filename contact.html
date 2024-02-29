@@ -26,7 +26,7 @@
                 <img class="contact-profile-headshot" src="/assets/img/Headshot.jpg" width="300">
                 <p>Hector Gonzalez</p>
 
-                <div class="about-content-profile-icons">
+                <div class="contact-content-profile-icons">
                     <a href="/assets/img/resume.pdf" target="_blank"><i class="fa-solid fa-file fa-lg font-awesome-icon"></i></a>
                     <a href="https://www.linkedin.com/in/hectorgonzalez2023" target="_blank"><i class="fa-brands fa-linkedin fa-lg font-awesome-icon"></i></a>
                     <a href="https://github.com/hecgon2022" target="_blank"><i class="fa-brands fa-github fa-lg font-awesome-icon"></i></a>
@@ -34,24 +34,31 @@
 
             </div>
 
-            <div class="contact-form">
 
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+            <div class="contact-form-container">
+                <p>Send me a message!</p>
 
-                <div>
-                    <label for="name">Subject:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+                <div class="contact-form"> 
 
-                <div>
-                    <label for="name">Body:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+                    <div class="name-input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                <button type="submit">Submit</button>
+                    <div class="subject-input">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="message-input">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="8" cols="50"></textarea>
+                    </div>
+
+                    <button class="form-button" type="submit">Submit</button>
+
+                </div>   
+
 
             </div>
 

@@ -8,10 +8,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100svh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100svh;
+    overflow: auto;
     background-image: url("/assets/svgs/contact/contact-background.svg");
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .return-link-container {
@@ -38,8 +44,7 @@
 
 .contact-main {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 100px;
     background-color: #FFFFFF;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -51,7 +56,8 @@
 .contact-profile {
     display: flex;
     flex-direction: column;
-    height: 380px;
+    justify-self: flex-start;
+    height: 100%;
     padding: 10px 60px 10px 30px;
     border-right: 2px solid rgba(0, 0, 0, 0.1);
 }
@@ -61,7 +67,143 @@
 }
 
 .contact-profile-headshot {
-    width: 300px;
+    width: 200px;
     border-radius: 20px;
     margin-bottom: 30px;
+}
+
+.contact-content-profile-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+
+.contact-form-container {
+    padding: 20px 10px 10px 10px;    
+    width: 50%;
+    min-width: 200px;
+}
+
+.contact-form-container p {
+    margin-bottom: 20px;
+    color: #03045E;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.contact-form button {
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.name-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.name-input input {
+    width: 100%;
+    height: 25px;
+}
+
+.subject-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subject-input input {
+    width: 100%;
+    height: 25px;
+}
+
+.message-input label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.message-input textarea {
+    width: 100%;
+    resize: none;
+}
+
+.form-button {
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .5);
+    background-color: #F1F2F6;
+}
+
+
+
+/* BREAKPOINTS */
+/* This is the conversion for the width of our webpage. */
+@media (max-width: 1250px) {
+      
+    .contact-main, .return-link-container {
+        width: 80vw;
+    }
+
+}
+
+/* This the conversion to the hamburger menu for mobile. */
+@media (max-width: 1000px) {
+
+    .return-link-container {
+        margin-top: 30px;
+    }
+
+    .contact-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .contact-profile {
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+        border-right: none;
+        padding: 10px 10px 30px 10px;
+        align-items: center;
+        width: fit-content;
+        align-self: center;
+    }
+
+    .contact-form-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact-form-container p {
+        text-align: center;
+    }
+
+    
+
+
+}
+
+
+/* This the conversion to the hamburger menu for even smaller mobile. */
+@media (max-width: 500px) {
+
+
+
+
+
 }
